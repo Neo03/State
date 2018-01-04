@@ -1,6 +1,8 @@
 module Main where
 
-import Lib
-
+--import Lib
+import FizzBuzz
+--main :: IO ()
+--main = someFunc
 main :: IO ()
-main = someFunc
+main = mapM_ (putStrLn . fizzBuzz) [1..100]
